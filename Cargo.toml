@@ -1,0 +1,17 @@
+[package]
+name = "wordsentences"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+http = "1.2.0"
+# TLS实现
+tokio-rustls = "0.25.0"
+# 序列化有关
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.136"
+
+# 异步运行时
+[dependencies.tokio]
+version = "1.42.0"
+features = ["rt","rt-multi-thread","net"]
